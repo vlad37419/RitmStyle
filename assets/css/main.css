@@ -1,0 +1,233 @@
+/* fonts */
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+        url('/assets/fonts/proxima-nova/regular/ProximaNova-Regular.woff2') format('woff2'),
+        url('/assets/fonts/proxima-nova/regular/ProximaNova-Regular.woff') format('woff');
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+        url('/assets/fonts/proxima-nova/bold/ProximaNova-Bold.woff2') format('woff2'),
+        url('/assets/fonts/proxima-nova/bold/ProximaNova-Bold.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Light'), local('ProximaNova-Light'),
+        url('/assets/fonts/proxima-nova/light/ProximaNova-Light.woff2') format('woff2'),
+        url('/assets/fonts/proxima-nova/light/ProximaNova-Light.woff') format('woff');
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: local('Proxima Nova Semibold'), local('ProximaNova-Semibold'),
+        url('/assets/fonts/proxima-nova/semi-bold/ProximaNova-Semibold.woff2') format('woff2'),
+        url('/assets/fonts/proxima-nova/semi-bold/ProximaNova-Semibold.woff') format('woff');
+    font-display: swap;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'El Messiri';
+    src: local('El Messiri Semibold'), local('ElMessiri-bold'),
+        url('/assets/fonts/el-messiri/bold/ElMessiri-Bold.woff2') format('woff2'),
+        url('/assets/fonts/el-messiri/bold/ElMessiri-Bold.woff') format('woff');
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* glob */
+body {
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: #F3F5F6;
+    color: #162831;
+    min-width: 320px;
+}
+
+.container {
+    max-width: 1056px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.section-offset {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-family: 'El Messiri';
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 140%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.section-title::before,
+.section-title::after {
+    content: '';
+    width: 28px;
+    height: 14px;
+    background-color: #018ABE;
+}
+
+.section-title::before {
+    border-radius: 0px 50px;
+    margin-right: 45px;
+}
+
+.section-title::after {
+    border-radius: 50px 0;
+    margin-left: 45px;
+}
+
+/* service */
+.service {
+    display: flex;
+    align-items: center;
+}
+
+.service__picture {
+    flex-shrink: 0;
+    max-width: 526px;
+}
+
+.service__img {
+    border-radius: 10px;
+}
+
+.service__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    margin-bottom: 30px;
+}
+
+.service__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 20px;
+    margin-right: 80px;
+}
+
+.service__text:last-child {
+    margin-bottom: 0;
+}
+
+.service:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.service:nth-child(2n) .service__picture {
+    margin-right: 80px;
+}
+
+.service:nth-child(2n) .service__text {
+    margin-right: 0;
+}
