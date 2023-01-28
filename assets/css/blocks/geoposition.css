@@ -1,0 +1,96 @@
+.ymaps-2-1-79-controls__toolbar {
+    display: none;
+}
+
+.ymaps-2-1-79-copyrights-pane {
+    display: none;
+}
+
+.ymaps-2-1-79-controls__bottom {
+    display: none;
+}
+
+.ymaps-2-1-79-controls__control {
+    inset: 95px auto auto 5px !important;
+}
+
+#map {
+    border-radius: 10px;
+    min-width: 0 !important;
+    margin-right: 50px;
+    overflow: hidden;
+}
+
+.geoposition__container {
+    display: flex;
+    max-width: 1382px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.geoposition__card {
+    padding: 32px 45px;
+    background-color: #018ABE;
+    border-radius: 10px;
+    min-width: 392px;
+    margin-bottom: 24px;
+}
+
+.geoposition__card:last-child {
+    margin-bottom: 0;
+}
+
+.geoposition__card-title {
+    font-family: 'El Messiri';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.geoposition__card-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.geoposition__card-item:last-child {
+    margin-bottom: 0;
+}
+
+.geoposition__card-icon {
+    margin-right: 20px;
+}
+
+.geoposition__card-text {
+    font-size: 14px;
+    line-height: 135%;
+    color: #fff;
+}
+
+.geoposition__card-list {
+    margin-bottom: 30px;
+}
+
+.geoposition__card-btn {
+    color: #018ABE;
+    background-color: #fff;
+}
+
+@media (max-width: 991px) {
+    .geoposition__container {
+        display: block;
+    }
+
+    #map {
+        min-height: 300px;
+        margin-bottom: 24px;
+        margin-right: 0;
+    }
+
+    .geoposition__card {
+        min-width: 0;
+        padding: 30px;
+    }
+}

@@ -5,144 +5,489 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/build/swiper.css">
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/headers/header.css">
     <link rel="stylesheet" href="/assets/css/blocks/promo.css">
     <link rel="stylesheet" href="/assets/css/blocks/about.css">
+    <link rel="stylesheet" href="/assets/css/blocks/price.css">
+    <link rel="stylesheet" href="/assets/css/blocks/gallery.css">
+    <link rel="stylesheet" href="/assets/css/blocks/reviews.css">
+    <link rel="stylesheet" href="/assets/css/blocks/geoposition.css">
+    <link rel="stylesheet" href="/assets/css/footers/footer.css">
+    <script defer src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+    <script defer src="/assets/js/build/swiper.js"></script>
+    <script defer src="/assets/js/main.js"></script>
     <title>RitmStyle</title>
 </head>
 
 <body>
     <header class="header">
         <div class="header__container">
-            <a href="/" class="header__logo">
-                <picture class="header__logo-picture">
-                    <img src="/assets/img/logo.svg" alt="Логотип RitmStyle" class="header__logo-img">
-                </picture>
-            </a>
-            <nav class="header__menu menu-header">
-                <ul class="menu-header__list">
-                    <li class="menu-header__item">
-                        <a href="#" class="menu-header__link">
-                            Главная
-                        </a>
-                    </li>
-                    <li class="menu-header__item">
-                        <a href="#" class="menu-header__link">
-                            Сеансы
-                        </a>
-                    </li>
-                    <li class="menu-header__item">
-                        <a href="#" class="menu-header__link">
-                            Отзывы
-                        </a>
-                    </li>
-                    <li class="menu-header__item">
-                        <a href="#" class="menu-header__link">
-                            Контакты
-                        </a>
-                    </li>
-                    <li class="menu-header__item">
-                        <a href="#" class="menu-header__link">
-                            Новости
-                        </a>
-                    </li>
-                    <li class="menu-header__item">
-                        <a href="#" class="menu-header__link">
-                            Обо мне
-                        </a>
-                    </li>
-                    <li class="menu-header__item">
-                        <a href="#" class="menu-header__link">
-                            Блог
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="send-btn">
-                Записаться на сеанс
+            <div class="header__logo">
+                <a href="/" class="header__logo-link">
+                    <picture class="header__logo-picture">
+                        <img src="/assets/img/logo.svg" alt="Логотип RitmStyle" class="header__logo-img">
+                    </picture>
+                </a>
+            </div>
+            <div class="header__wrapper">
+                <nav class="header__menu menu-header">
+                    <ul class="menu-header__list">
+                        <li class="menu-header__item">
+                            <a href="#" class="menu-header__link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="#" class="menu-header__link">
+                                Сеансы
+                            </a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="#" class="menu-header__link">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="#" class="menu-header__link">
+                                Контакты
+                            </a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="#" class="menu-header__link">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="#" class="menu-header__link">
+                                Обо мне
+                            </a>
+                        </li>
+                        <li class="menu-header__item">
+                            <a href="#" class="menu-header__link">
+                                Блог
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="send-btn">
+                    Записаться на сеанс
+                </button>
+            </div>
+            <button class="header__burger">
+                <span class="header__burger-line"></span>
             </button>
         </div>
     </header>
-    <section class="promo section-offset">
-        <div class="promo__container">
-            <p class="promo__name">
-                Укрепление здоровья
-            </p>
-            <h1 class="promo__title">
-                Акватерапия RitmStyle
-            </h1>
-        </div>
-    </section>
-    <section class="about section-offset">
-        <div class="about__container container">
-            <h2 class="about__title section-title">
-                Об RitmStyle
-            </h2>
-            <div class="about__items">
-                <article class="about__item service">
-                    <div class="service__content">
-                        <h3 class="service__title">
-                            RitmStyle массаж
-                        </h3>
-                        <p class="service__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget
-                            mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet
-                            amet. Diam nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.
-                            Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet
-                            diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor
-                            at tempor.
-                        </p>
-                        <p class="service__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget
-                            mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet
-                            amet. Diam nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.
-                            Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet
-                            diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor
-                            at tempor.
-                        </p>
-                    </div>
-                    <picture class="service__picture">
-                        <img src="/assets/img/blocks/about/service-test.jpg" alt="Изображение услуги RitmStyle массаж"
-                            class="service__img">
-                    </picture>
-                </article>
-                <article class="about__item service">
-                    <div class="service__content">
-                        <h3 class="service__title">
-                            RitmStyle гидротерапия
-                        </h3>
-                        <p class="service__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu cras quis ac a non ut viverra
-                            turpis eget. Hendrerit quis pulvinar massa ipsum sem. Donec posuere nulla enim non neque
-                            etiam. Eros arcu, pulvinar penatibus luctus ridiculus sagittis vel nunc hac. Nisi, diam
-                            tincidunt dui viverra. Eget quis ultricies sem nunc risus senectus luctus ultricies. Enim
-                            feugiat pharetra pharetra et.
-                            Pulvinar arcu at morbi posuere cursus. Fermentum est sit enim velit ornare molestie. Ipsum
-                            nisi id sed tempor elementum. Mi nunc eget pellentesque ipsum. Suspendisse risus a id vel
-                            massa tincidunt. Hendrerit blandit in augue vel mi quam magna egestas. Fringilla ac lacus
-                            viverra ullamcorper leo, enim vitae id aliquam. Magna sed tristique tellus enim, netus
-                            tempor at elit dui. Ullamcorper hendrerit feugiat libero tellus diam egestas dui tellus
-                            odio.
-                        </p>
-                        <p class="service__text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget
-                            mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet
-                            amet. Diam nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.
-                            Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis amet
-                            diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant tortor
-                            at tempor.
-                        </p>
-                    </div>
-                    <picture class="service__picture">
-                        <img src="/assets/img/blocks/about/service-test.jpg" alt="Изображение услуги RitmStyle массаж"
-                            class="service__img">
-                    </picture>
-                </article>
+    <main class="main">
+        <section class="promo section-offset">
+            <div class="promo__container">
+                <p class="promo__name">
+                    Укрепление здоровья
+                </p>
+                <h1 class="promo__title">
+                    Акватерапия RitmStyle
+                </h1>
             </div>
+        </section>
+        <section class="about section-offset">
+            <div class="about__container container">
+                <h2 class="about__title section-title">
+                    Об RitmStyle
+                </h2>
+                <div class="about__items">
+                    <article class="about__item service">
+                        <div class="service__content">
+                            <h3 class="service__title">
+                                RitmStyle массаж
+                            </h3>
+                            <picture class="service__picture">
+                                <img src="/assets/img/blocks/about/service-test.jpg"
+                                    alt="Изображение услуги RitmStyle массаж" class="service__img">
+                            </picture>
+                            <p class="service__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget
+                                mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet
+                                amet. Diam nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.
+                                Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis
+                                amet
+                                diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant
+                                tortor
+                                at tempor.
+                            </p>
+                            <p class="service__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget
+                                mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet
+                                amet. Diam nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.
+                                Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis
+                                amet
+                                diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant
+                                tortor
+                                at tempor.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="about__item service">
+                        <div class="service__content">
+                            <h3 class="service__title">
+                                RitmStyle гидротерапия
+                            </h3>
+                            <picture class="service__picture">
+                                <img src="/assets/img/blocks/about/service-test.jpg"
+                                    alt="Изображение услуги RitmStyle массаж" class="service__img">
+                            </picture>
+                            <p class="service__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu cras quis ac a non ut
+                                viverra
+                                turpis eget. Hendrerit quis pulvinar massa ipsum sem. Donec posuere nulla enim non neque
+                                etiam. Eros arcu, pulvinar penatibus luctus ridiculus sagittis vel nunc hac. Nisi, diam
+                                tincidunt dui viverra. Eget quis ultricies sem nunc risus senectus luctus ultricies.
+                                Enim
+                                feugiat pharetra pharetra et.
+                                Pulvinar arcu at morbi posuere cursus. Fermentum est sit enim velit ornare molestie.
+                                Ipsum
+                                nisi id sed tempor elementum. Mi nunc eget pellentesque ipsum. Suspendisse risus a id
+                                vel
+                                massa tincidunt. Hendrerit blandit in augue vel mi quam magna egestas. Fringilla ac
+                                lacus
+                                viverra ullamcorper leo, enim vitae id aliquam. Magna sed tristique tellus enim, netus
+                                tempor at elit dui. Ullamcorper hendrerit feugiat libero tellus diam egestas dui tellus
+                                odio.
+                            </p>
+                            <p class="service__text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in purus, sed tellus eget
+                                mattis nibh quam. Eu ornare nunc, id est. Erat consectetur etiam a sit diam in imperdiet
+                                amet. Diam nisl, ipsum suscipit amet. Eleifend amet habitasse proin quis adipiscing.
+                                Nisl convallis mauris in consequat. Sit ac vitae posuere maecenas dictumst quam. Felis
+                                amet
+                                diam, non augue massa. Egestas molestie lobortis rhoncus, elit nulla nisl. Habitant
+                                tortor
+                                at tempor.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="price section-offset">
+            <div class="price__container container">
+                <h2 class="price__title section-title">
+                    Стоимость сеансов
+                </h2>
+                <div class="price__wrapper">
+                    <ul class="price__list">
+                        <li class="price__item">
+                            <p class="price__name">
+                                RitmStyle с погружением
+                            </p>
+                            <p class="price__value">
+                                1000р.
+                            </p>
+                        </li>
+                        <li class="price__item">
+                            <p class="price__name">
+                                Абонемент на RitmStyle
+                            </p>
+                            <p class="price__value">
+                                5500р.
+                            </p>
+                        </li>
+                        <li class="price__item">
+                            <p class="price__name">
+                                RitmStyle для пар
+                            </p>
+                            <p class="price__value">
+                                6000р.
+                            </p>
+                        </li>
+                        <li class="price__item">
+                            <p class="price__name">
+                                RitmStyle для беременных
+                            </p>
+                            <p class="price__value">
+                                13500р.
+                            </p>
+                        </li>
+                        <li class="price__item">
+                            <p class="price__name">
+                                RitmStyle + фотосессия
+                            </p>
+                            <p class="price__value">
+                                11500р.
+                            </p>
+                        </li>
+                    </ul>
+                    <picture class="price__picture">
+                        <img src="/assets/img/blocks/price/visitka.jpg" alt="" class="price__img">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section class="gallery section-offset">
+            <div class="gallery__container">
+                <picture class="gallery__active">
+                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt="" class="gallery__active-img">
+                </picture>
+                <div class="gallery__items">
+                    <picture class="gallery__item">
+                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt="" class="gallery__item-img">
+                    </picture>
+                    <picture class="gallery__item">
+                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="" class="gallery__item-img">
+                    </picture>
+                    <picture class="gallery__item">
+                        <img src="https://swiperjs.com/demos/images/nature-4.jpg" alt="" class="gallery__item-img">
+                    </picture>
+                    <picture class="gallery__item">
+                        <img src="https://swiperjs.com/demos/images/nature-5.jpg" alt="" class="gallery__item-img">
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section class="reviews section-offset">
+            <div class="reviews__container">
+                <h2 class="reviews__title section-title">
+                    Отзывы
+                </h2>
+                <div class="reviews__wrapper">
+                    <div class="reviews__slider swiper">
+                        <div class="reviews__slider-wrapper swiper-wrapper">
+                            <div class="reviews__slide review swiper-slide">
+                                <p class="review__name">
+                                    Кира Иванова 1
+                                </p>
+                                <p class="review__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi
+                                    nulla
+                                    dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor
+                                    praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit
+                                    et.
+                                    Volutpat vestibulum a lectus sed blandit.
+                                </p>
+                                <p class="review__text">
+                                    Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque
+                                    vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque
+                                    id
+                                    nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id
+                                    elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus
+                                    mollis
+                                    aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis.
+                                </p>
+                            </div>
+                            <div class="reviews__slide review swiper-slide">
+                                <p class="review__name">
+                                    Кира Иванова 2
+                                </p>
+                                <p class="review__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi
+                                    nulla
+                                    dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor
+                                    praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit
+                                    et.
+                                    Volutpat vestibulum a lectus sed blandit.
+                                    vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque
+                                    id
+                                    nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id
+                                    elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus
+                                    mollis
+                                    aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis.
+                                </p>
+                                <p class="review__text">
+                                    Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque
+                                    vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque
+                                    id
+                                    nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id
+                                    elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus
+                                    mollis
+                                    aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis.
+                                    vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque
+                                    id
+                                    nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id
+                                    elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus
+                                    mollis
+                                    aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis.
+                                </p>
+                            </div>
+                            <div class="reviews__slide review swiper-slide">
+                                <p class="review__name">
+                                    Кира Иванова 3
+                                </p>
+                                <p class="review__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi
+                                    nulla
+                                    dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor
+                                    praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit
+                                    et.
+                                    Volutpat vestibulum a lectus sed blandit.
+                                </p>
+                                <p class="review__text">
+                                    Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque
+                                    vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque
+                                    id
+                                    nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id
+                                    elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus
+                                    mollis
+                                    aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis.
+                                </p>
+                                <p class="review__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi
+                                    nulla
+                                    dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor
+                                    praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit
+                                    et.
+                                    Volutpat vestibulum a lectus sed blandit.
+                                </p>
+                            </div>
+                            <div class="reviews__slide review swiper-slide">
+                                <p class="review__name">
+                                    Кира Иванова 4
+                                </p>
+                                <p class="review__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi
+                                    nulla
+                                    dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor
+                                    praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit
+                                    et.
+                                    Volutpat vestibulum a lectus sed blandit.
+                                </p>
+                                <p class="review__text">
+                                    Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque
+                                    vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque
+                                    id
+                                    nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id
+                                    elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus
+                                    mollis
+                                    aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis.
+                                </p>
+                                <p class="review__text">
+                                    Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque
+                                    vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque
+                                    id
+                                    nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id
+                                    elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus
+                                    mollis
+                                    aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis.
+                                </p>
+                            </div>
+                            <div class="reviews__slide review swiper-slide">
+                                <p class="review__name">
+                                    Кира Иванова 5
+                                </p>
+                                <p class="review__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi
+                                    nulla
+                                    dictum. Urna mi orci gravida placerat amet, eu, aliquet facilisis aliquet. Dolor
+                                    praesent nam ornare fringilla enim nibh donec sit imperdiet. Amet, diam duis eu sit
+                                    et.
+                                    Volutpat vestibulum a lectus sed blandit.
+                                    vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque
+                                    id
+                                    nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id
+                                    elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus
+                                    mollis
+                                    aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis.
+                                </p>
+                                <p class="review__text">
+                                    Venenatis urna mattis eu enim molestie iaculis et aliquet. Velit in pellentesque
+                                    vestibulum phasellus orci. Fermentum sed phasellus aliquam nulla non aenean. Quisque
+                                    id
+                                    nunc, mauris potenti a massa. Fermentum at elit, convallis leo dolor aliquet id
+                                    elementum. Ullamcorper sociis et cum bibendum in egestas. Diam, urna, sed tempus
+                                    mollis
+                                    aliquam elit. Facilisi nam nulla pulvinar mauris vel lacinia venenatis.
+                                </p>
+                            </div>
+                            <div class="reviews__slide review swiper-slide">
+                                <p class="review__name">
+                                    Кира Иванова 6
+                                </p>
+                                <p class="review__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus diam risus morbi
+                                    nulla
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="geoposition section-offset">
+            <div class="geoposition__container">
+                <div id="map" style="width: 100%; height: auto;"></div>
+                <div class="geoposition__wrapper">
+                    <div class="geoposition__card">
+                        <p class="geoposition__card-title">
+                            Бассейн WorkClass
+                        </p>
+                        <ul class="geoposition__card-list">
+                            <li class="geoposition__card-item">
+                                <img src="/assets/img/blocks/geoposition/geo.svg" alt="" aria-label="presentation" class="geoposition__card-icon">
+                                <p class="geoposition__card-text">
+                                    Невский 140
+                                </p>
+                            </li>
+                            <li class="geoposition__card-item">
+                                <img src="/assets/img/blocks/geoposition/metro.svg" alt="" aria-label="presentation" class="geoposition__card-icon">
+                                <p class="geoposition__card-text">
+                                    м. Спасская
+                                </p>
+                            </li>
+                            <li class="geoposition__card-item">
+                                <img src="/assets/img/blocks/geoposition/record.svg" alt="" aria-label="presentation" class="geoposition__card-icon">
+                                <p class="geoposition__card-text">
+                                    Запись по договоренности
+                                </p>
+                            </li>
+                        </ul>
+                        <button class="geoposition__card-btn send-btn">
+                            Записаться на сеанс
+                        </button>
+                    </div>
+                    <div class="geoposition__card">
+                        <p class="geoposition__card-title">
+                            Бассейн "На Гороховой"
+                        </p>
+                        <ul class="geoposition__card-list">
+                            <li class="geoposition__card-item">
+                                <img src="/assets/img/blocks/geoposition/geo.svg" alt="" aria-label="presentation" class="geoposition__card-icon">
+                                <p class="geoposition__card-text">
+                                    3-й проезд Иванова
+                                </p>
+                            </li>
+                            <li class="geoposition__card-item">
+                                <img src="/assets/img/blocks/geoposition/metro.svg" alt="" aria-label="presentation" class="geoposition__card-icon">
+                                <p class="geoposition__card-text">
+                                    м. Крестовский остров
+                                </p>
+                            </li>
+                            <li class="geoposition__card-item">
+                                <img src="/assets/img/blocks/geoposition/record.svg" alt="" aria-label="presentation" class="geoposition__card-icon">
+                                <p class="geoposition__card-text">
+                                    Запись по договоренности
+                                </p>
+                            </li>
+                        </ul>
+                        <button class="geoposition__card-btn send-btn">
+                            Записаться на сеанс
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <p class="footer__copyright footer-text">
+                © 2018-2022 RitmStyle
+            </p>
+            <p class="footer__dev footer-text">
+                Сделано d-e-n.info
+            </p>
         </div>
-    </section>
+    </footer>
 </body>
 
 </html>
